@@ -116,6 +116,9 @@
 			createUnityInstance(canvas, config, progressHandler).then(function (instance) 
 			{
 				unityInstance = instance;
+                //Test
+                unityInstance.SetFullscreen(true);
+                //
 				canvas = instance.Module.canvas;
 				onResize();
 			});
